@@ -3,16 +3,16 @@ library(rgdal)
 library(sf)
 library(caret)
 library(mapview)
-setwd('C:/Users/__REPOSITORY_DIR__')
+setwd('C:/__DIR__')
 
 ################################################################################
 # classification
 ################################################################################
 # based on: https://github.com/HannaMeyer/Geostat2018/tree/master/practice
 
-sentinel <- stack("/projects/___PROJECTNAME___.tif")
+sentinel <- stack("___PROJECTNAME___.tif")
 ## shapefile of the training site prepared in QGIS
-training<- read_sf("data/___YOURREPAIREDFILE___.shp") 
+training<- read_sf("___YOURREPAIREDFILE___.shp") 
 
 extr <- extract(sentinel, training, df=TRUE)
 extr <- merge(extr, training, by.x="ID", by.y="fid")
