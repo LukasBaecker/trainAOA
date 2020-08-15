@@ -69,6 +69,9 @@ When generating is done you can just update the files of your chosen project in 
 
 Keep in mind that tiler generates TMS-tiles and the tilelayers have a parameter named tms that is set "true" to handle that. If you use 'Generate XYZ tiles' in QGIS check the TMS box to avoid possible mistakes. Or you could channge the tms-parameter in the Map.jsx file:
 
+### Using QGIS-tiles for AOA
+If you got any problems with tiler or installation of any functionality to bring tiler to life, you can allways create tiles with QGIS and place them into the right folder.
+
 ```
 <BaseLayer checked name="investigation area">
   <TileLayer
