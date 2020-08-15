@@ -35,7 +35,7 @@ plot(AOA)
 writeRaster(AOA, filename= sprintf('projects/%s_aoa.grd',name),bylayer=TRUE, overwrite=TRUE)
 
 #should work without, if path in system variable is available
-tiler_options(osgeo4w = "C:/OSGeo4W64/OSGeo4W.bat", python="C:/Users/__YOUR_OWN_USERNAME__/AppData/Local/Programs/Python/Python37/python.exe")
+tiler_options(osgeo4w = "C:/OSGeo4W64/OSGeo4W.bat", python="C:/__PATH_TO_PYTHON__/Python/Python37/python.exe")
 
 tile(file=  sprintf('projects/%s_aoa_2.grd',name),
      tiles= sprintf('dist/static/layers/%s_aoa',name),
@@ -56,7 +56,7 @@ function(projectname ){
   projectpath <- sprintf("projects/%s.tif", projectname)
   layerpath <- sprintf("dist/static/layers/%s", projectname)
   
-  tiler_options(osgeo4w = "C:/OSGeo4W64/OSGeo4W.bat", python="C:/Users/Luke/AppData/Local/Programs/Python/Python37/python.exe")
+tiler_options(osgeo4w = "C:/OSGeo4W64/OSGeo4W.bat", python="C:/__PATH_TO_PYTHON__/Python/Python37/python.exe")
   tile(file= projectpath,
        tiles= layerpath,
        zoom="10-15",
