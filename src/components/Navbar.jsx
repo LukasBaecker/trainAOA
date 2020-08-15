@@ -275,7 +275,7 @@ function navigation() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="navigation-collapse">
           <Nav className="mr-auto">
-            <Nav.Link href="/">Start</Nav.Link>
+            <Nav.Link href="/">Map</Nav.Link>
             <Nav.Link onClick={handleShow}>Info</Nav.Link>
             <Nav.Link onClick={handleShowFAQ}>FAQ</Nav.Link>
           </Nav>
