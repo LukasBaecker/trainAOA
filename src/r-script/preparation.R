@@ -6,7 +6,7 @@ library(caret)
 library(RStoolbox)
 library(tiler)
 
-setwd('C:/Users/__REPOSITORY_DIR__')
+setwd('C:/__DIR_TO_SAVE_PROJECT_LAYER__')
 
 ################################################################################
 # Data preparation
@@ -29,5 +29,6 @@ east_crop <- crop(sentinel_east,c(390309.5, 418741.3, 5746125.4,5768919.6))
 # create a mosaic of both tiles
 combined <- mosaic(west_crop,east_crop,fun=mean)
 
-writeRaster(combined,filename = '/data/___PROJECTNAME___.tif',
+writeRaster(combined,filename ="__PROJECTNAME__.tif",
+            format="GTiff",
             overwrite=TRUE)
