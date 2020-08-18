@@ -67,26 +67,10 @@ Mind that lower zoomlevels take much longer to generate because of the high amou
 
 When generating is done you can just update the files of your chosen project in the dist/layers/PROJECTNAME folder.
 
-Keep in mind that tiler generates TMS-tiles and the tilelayers have a parameter named tms that is set "true" to handle that. If you use 'Generate XYZ tiles' in QGIS check the TMS box to avoid possible mistakes. Or you could channge the tms-parameter in the Map.jsx file:
+Keep in mind that tiler generates TMS-tiles and the tilelayers have a parameter named tms that is set "true" to handle that. If you use 'Generate XYZ tiles' in QGIS check the TMS box to avoid possible mistakes.
 
 ### Using QGIS-tiles for AOA
 If you got any problems with tiler or installation of any functionality to bring tiler to life, you can allways create tiles with QGIS and place them into the right folder.
-
-```
-<BaseLayer checked name="investigation area">
-  <TileLayer
-    attribution="&copy;  contributors"
-    url={
-      "/static/layers/" +
-      currentProject.projectname +
-      "/{z}/{x}/{y}.png"
-    }
-    tms="true"
-    minZoom="10"
-    maxZoom="18"
-  />
-</BaseLayer>
-```
 
 ### Downloading and using the JSON-polygons
 To use the classification file at /src/r-script you have to convert the JSON-file to a shape-file first.
