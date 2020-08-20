@@ -1,4 +1,4 @@
-# Bachelorarbeit
+# trainAOA
 
 With this webapplication you can collect trainingdata in an efficient way resulting in a machine learning process. The datacollecting is supported by a Layer
 which shows the AOA (area of applicability) provided by the AOA-algorithm in Hanna Meyers [CAST-Package](https://github.com/HannaMeyer/CAST). 
