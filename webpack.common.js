@@ -99,7 +99,7 @@ let clientConfig = {
       template: "./src/html/index.ejs",
       filename: "./index.html",
       favicon: "./src/img/favicon.png",
-      title: "Mapping with AOA layer",
+      title: "trainAOA",
       excludeChunks: ["server"],
     }),
   ],
